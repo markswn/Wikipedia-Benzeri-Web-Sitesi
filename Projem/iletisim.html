@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="InfPedia - Bizimle iletişime geçin" />
+    <meta name="keywords" content="iletişim, InfPedia, iletişim formu, destek" />
+    <meta name="author" content="InfPedia" />
+    <link rel="icon" href="Resim/logo.png" />
+    <title>İletişim - InfPedia</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <div class="logo-container">
+          <h1 class="site-title">InfPedia</h1>
+        </div>
+      </div>
+      <nav class="main-nav" aria-label="Ana navigasyon">
+        <div class="nav-left">
+          <a href="index.html" title="Ana Sayfa"><i class="fas fa-home"></i> Anasayfa</a>
+          <a href="hakkımızda.html" title="Hakkımızda"><i class="fas fa-info-circle"></i> Hakkımızda</a>
+          <a href="iletisim.html" title="İletişim" class="active"><i class="fas fa-envelope"></i> İletişim</a>
+        </div>
+        <div class="nav-right">
+          <a href="girisyap.html" title="Giriş Yap"><i class="fas fa-sign-in-alt"></i> Giriş Yap</a>
+          <a href="kayıtol.html" title="Kayıt Ol"><i class="fas fa-user-plus"></i> Kayıt Ol</a>
+        </div>
+      </nav>
+      <form class="search-button" action="index.html" role="search">
+        <label for="search-input" class="visually-hidden"></label>
+        <input type="search" 
+               id="search-input"
+               name="q"
+               placeholder="Aramak istediğiniz kelimeyi yazın..." 
+               aria-label="Site içinde arama yapın"/>
+        <button type="submit" aria-label="Ara"><i class="fas fa-search"></i> Ara</button>
+      </form>
+    </header>
+
+    <main class="container" role="main">
+      <div class="main-content">
+        <section class="welcome-box">
+          <h2><i class="fas fa-envelope"></i> İletişim</h2>
+          <p>Sorularınız, önerileriniz ve geri bildirimleriniz için bizimle iletişime geçin.</p>
+        </section>
+
+        <div class="article-box">
+          <div class="article-content">
+            <section class="book-details">
+              <h2><i class="fas fa-paper-plane"></i> İletişim Formu</h2>
+              <form class="login-form" action="#" method="post">
+                <div class="form-group">
+                  <label for="name"><i class="fas fa-user"></i> Adınız Soyadınız:</label>
+                  <input type="text" id="name" name="name" required 
+                         placeholder="Adınızı ve soyadınızı girin">
+                </div>
+
+                <div class="form-group">
+                  <label for="email"><i class="fas fa-envelope"></i> E-posta Adresiniz:</label>
+                  <input type="email" id="email" name="email" required 
+                         placeholder="E-posta adresinizi girin">
+                </div>
+
+                <div class="form-group">
+                  <label for="subject"><i class="fas fa-heading"></i> Konu:</label>
+                  <input type="text" id="subject" name="subject" required 
+                         placeholder="Mesajınızın konusunu girin">
+                </div>
+
+                <div class="form-group">
+                  <label for="message"><i class="fas fa-comment"></i> Mesajınız:</label>
+                  <textarea id="message" name="message" rows="5" required 
+                            placeholder="Mesajınızı buraya yazın"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                  <i class="fas fa-paper-plane"></i> Gönder
+                </button>
+              </form>
+            </section>
+
+            <section class="book-details">
+              <h2><i class="fas fa-map-marker-alt"></i> İletişim Bilgileri</h2>
+              <ul class="themes-list">
+                <li><i class="fas fa-envelope"></i> E-posta: info@infpedia.com</li>
+                <li><i class="fas fa-phone"></i> Telefon: +90 (212) 555 55 55</li>
+                <li><i class="fas fa-map-marker-alt"></i> Adres: İstanbul, Türkiye</li>
+                <li><i class="fas fa-clock"></i> Çalışma Saatleri: Hafta içi 09:00 - 18:00</li>
+              </ul>
+            </section>
+
+            <section class="book-details">
+              <h2><i class="fas fa-question-circle"></i> Sıkça Sorulan Sorular</h2>
+              <ul class="themes-list">
+                <li><i class="fas fa-circle"></i> Nasıl üye olabilirim?</li>
+                <li><i class="fas fa-circle"></i> Makale nasıl ekleyebilirim?</li>
+                <li><i class="fas fa-circle"></i> İçerikleri nasıl düzenleyebilirim?</li>
+                <li><i class="fas fa-circle"></i> Şifremi unuttum ne yapmalıyım?</li>
+              </ul>
+            </section>
+            <div class="tags">
+              <span class="tag"><i class="fas fa-tag"></i> İletişim</span>
+              <span class="tag"><i class="fas fa-tag"></i> Destek</span>
+              <span class="tag"><i class="fas fa-tag"></i> Yardım</span>
+            </div>
+          </div>
+        </div>
+        <section class="quick-links">
+          <h2><i class="fas fa-link"></i> Hızlı Bağlantılar</h2>
+          <div class="quick-links-grid">
+            <a href="hakkımızda.html" class="quick-link-card">
+              <i class="fas fa-info-circle fa-3x"></i>
+              <span>Hakkımızda</span>
+            </a>
+            <a href="kayıtol.html" class="quick-link-card">
+              <i class="fas fa-user-plus fa-3x"></i>
+              <span>Üye Ol</span>
+            </a>
+            <a href="gizlilikpolitikası.html" class="quick-link-card">
+              <i class="fas fa-shield-alt fa-3x"></i>
+              <span>Gizlilik Politikası</span>
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer role="contentinfo">
+      <div class="footer-content">
+        <div class="icon-box col">
+          <h2><i class="fas fa-book"></i> Ansiklopediye Katılın</h2>
+          <p>Bilgi paylaştıkça çoğalır. Katkıda bulunun!</p>
+        </div>
+        <div class="icon-box col">
+          <h2><i class="fas fa-share-alt"></i> Paylaş!</h2>
+          <p>Sayfamızı paylaşarak insanların aradıklarını bulmasına yardımcı ol.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 InfPedia | <a href="gizlilikpolitikası.html" style="color: whitesmoke;">Gizlilik Politikası</a></p>
+      </div>
+    </footer>
+  </body>
+</html>

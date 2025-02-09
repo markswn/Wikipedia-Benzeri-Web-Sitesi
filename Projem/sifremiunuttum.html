@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="InfPedia - Şifremi Unuttum" />
+    <meta name="keywords" content="şifre sıfırlama, şifremi unuttum, InfPedia" />
+    <meta name="author" content="InfPedia" />
+    <link rel="icon" href="Resim/logo.png" />
+    <title>Şifremi Unuttum - InfPedia</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <div class="logo-container">
+          <h1 class="site-title">InfPedia</h1>
+        </div>
+      </div>
+      <nav class="main-nav" aria-label="Ana navigasyon">
+        <div class="nav-left">
+          <a href="index.html" title="Ana Sayfa"><i class="fas fa-home"></i> Anasayfa</a>
+          <a href="hakkımızda.html" title="Hakkımızda"><i class="fas fa-info-circle"></i> Hakkımızda</a>
+          <a href="iletisim.html" title="İletişim"><i class="fas fa-envelope"></i> İletişim</a>
+        </div>
+        <div class="nav-right">
+          <a href="girisyap.html" title="Giriş Yap"><i class="fas fa-sign-in-alt"></i> Giriş Yap</a>
+          <a href="kayıtol.html" title="Kayıt Ol"><i class="fas fa-user-plus"></i> Kayıt Ol</a>
+        </div>
+      </nav>
+      <form class="search-button" action="index.html" role="search">
+        <label for="search-input" class="visually-hidden"></label>
+        <input type="search" 
+               id="search-input"
+               name="q"
+               placeholder="Aramak istediğiniz kelimeyi yazın..." 
+               aria-label="Site içinde arama yapın"/>
+        <button type="submit" aria-label="Ara"><i class="fas fa-search"></i> Ara</button>
+      </form>
+    </header>
+
+    <main class="container" role="main">
+      <div class="main-content">
+        <section class="welcome-box">
+          <h2><i class="fas fa-key"></i> Şifremi Unuttum</h2>
+          <p>Şifrenizi sıfırlamak için e-posta adresinizi girin.</p>
+        </section>
+
+        <div class="login-container">
+          <div class="login-box">
+            <form class="login-form" action="#" method="post">
+              <div class="form-group">
+                <label for="email">
+                  <i class="fas fa-envelope"></i> E-posta Adresi:
+                </label>
+                <input type="email" 
+                       id="email" 
+                       name="email" 
+                       required 
+                       placeholder="E-posta adresinizi girin">
+              </div>
+
+              <button type="submit" class="submit-btn">
+                <i class="fas fa-paper-plane"></i> Sıfırlama Bağlantısı Gönder
+              </button>
+            </form>
+
+            <div class="form-links">
+              <p>
+                <i class="fas fa-info-circle"></i> 
+                Sıfırlama bağlantısı e-posta adresinize gönderilecektir.
+              </p>
+              <a href="girisyap.html">
+                <i class="fas fa-sign-in-alt"></i> Giriş Yap sayfasına dön
+              </a>
+            </div>
+          </div>
+
+          <div class="login-info">
+            <h3><i class="fas fa-question-circle"></i> Yardım</h3>
+            <ul class="themes-list">
+              <li><i class="fas fa-circle"></i> E-posta adresinizi kontrol edin</li>
+              <li><i class="fas fa-circle"></i> Spam klasörünü kontrol edin</li>
+              <li><i class="fas fa-circle"></i> Bağlantı 24 saat geçerlidir</li>
+              <li><i class="fas fa-circle"></i> Sorun yaşarsanız iletişime geçin</li>
+            </ul>
+          </div>
+        </div>
+
+        <section class="quick-links">
+          <h2><i class="fas fa-link"></i> Hızlı Bağlantılar</h2>
+          <div class="quick-links-grid">
+            <a href="iletisim.html" class="quick-link-card">
+              <i class="fas fa-envelope fa-3x"></i>
+              <span>İletişim</span>
+            </a>
+            <a href="girisyap.html" class="quick-link-card">
+              <i class="fas fa-sign-in-alt fa-3x"></i>
+              <span>Giriş Yap</span>
+            </a>
+            <a href="kayıtol.html" class="quick-link-card">
+              <i class="fas fa-user-plus fa-3x"></i>
+              <span>Kayıt Ol</span>
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer role="contentinfo">
+      <div class="footer-content">
+        <div class="icon-box col">
+          <h2><i class="fas fa-user-plus"></i> Kayıt ol!</h2>
+          <p>Sayfamıza kayıt olarak bize destek olun.</p>
+          <a href="kayıtol.html" class="cta-button" style="color: whitesmoke;">Hemen Kayıt Ol</a>
+        </div>
+        <div class="icon-box col">
+          <h2><i class="fas fa-share-alt"></i> Paylaş!</h2>
+          <p>Sayfamızı paylaşarak insanların aradıklarını bulmasına yardımcı ol.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 InfPedia | <a href="gizlilikpolitikası.html" style="color: whitesmoke;">Gizlilik Politikası</a></p>
+      </div>
+    </footer>
+  </body>
+</html> 
